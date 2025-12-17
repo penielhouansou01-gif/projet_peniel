@@ -1,21 +1,20 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
 body {
-        width: 100%;
-        height: 100%;
-        font-size: 20px;
-}
-
-header{
     width: 100%;
-
+    height: 100%;
+    font-size: 20px;
 }
 
-.Peniel{
+header {
+    width: 100%;
+}
+
+.Peniel {
     height: 100px;
     background-color: #FFF5E0;
     display: flex;
@@ -25,28 +24,26 @@ header{
     padding-right: 50px;
 }
 
-
-.logo{
+.logo {
     line-height: 100%;
     height: 32px;
-    font-family: Poppins ;
-    font-size:  35px; 
+    font-family: Poppins;
+    font-size: 35px;
     color: #051848;
-    }
-
+}
 
 .nav1 a {
     text-decoration: none;
     margin: 15px;
 }
 
-.piedpage{
+.piedpage {
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(3, 1fr);
     width: 100%;
 }
 
-.sites{
+.sites {
     display: flex;
     flex-direction: column;
 }
@@ -56,159 +53,315 @@ header{
     height: 20px;
 }
 
-.sites section{
+.sites section {
     display: flex;
     gap: 8px;
     margin-top: 15px;
 }
-.paricipation{
+
+.paricipation {
     display: flex;
-    
 }
 
 .participation a {
-    text-decoration: none; 
-    
+    text-decoration: none;
 }
 
-.participation section{
+.participation section {
     margin-top: 15px;
 }
-.action1{
-      margin-top: 15px;
-        gap: 8px;      
-    
+
+.action1 {
+    margin-top: 15px;
+    gap: 8px;
 }
 
-
 .action a {
-    text-decoration: none; 
-    
+    text-decoration: none;
 }
 
 .action1 {
     display: flex;
     flex-direction: column;
-    gap: 15px; 
+    gap: 15px;
     margin-top: 15px;
 }
-footer{
+
+footer {
     background-color: #FFF5E0;
     width: 100%;
     padding: 30px;
 }
 
-.couleur code{
-   background-color: #FFF5E0;
+.couleur code {
+    background-color: #FFF5E0;
 }
 
-.se_connecter{
+.se_connecter {
     background-color: #FFD452;
     width: 90px;
     height: 30px;
-  
 }
 
-
-
-a{
+a {
     text-decoration: none;
     color: black;
 }
 
-
-.Connexion{
+.Connexion {
     display: flex;
     margin: 19px;
     justify-content: space-between;
-    
-    
 }
-.Connexion1{
+
+.Connexion1 {
     display: flex;
     flex-direction: column;
     margin: 10px;
     padding: 5px;
-    
-    
 }
-label{
+
+label {
     font-size: 20px;
     margin: 12px;
 }
-input{
+
+input {
     width: 500px;
     height: 40px;
     background-color: #FFF5E0;
 }
 
-.users{
+.users {
     display: flex;
     justify-content: space-between;
     margin: 10px;
     padding: 10px;
     align-items: center;
-
 }
-.Alexandre{
+
+.Alexandre {
     padding: auto;
     background-color: #FFD452;
-    
     width: 100%;
     padding: 10px;
     margin: 5px;
 }
-.Mickael{
-    padding: auto;
-    background-color: #24E9C5;
-    width: 100%;
-     padding: 10px;
-    margin: 5px;
 
-}
-.Corentin{
+.Mickael {
     padding: auto;
     background-color: #24E9C5;
     width: 100%;
     padding: 10px;
     margin: 5px;
-
 }
-.pen{
+
+.Corentin {
+    padding: auto;
+    background-color: #24E9C5;
+    width: 100%;
+    padding: 10px;
+    margin: 5px;
+}
+
+.pen {
     display: flex;
     justify-content: space-between;
     padding: 12px;
 }
-.zola{
+
+.zola {
     height: 100px;
     background-color: #FFF5E0;
-    display : flex;
+    display: flex;
     justify-content: space-between;
     align-items: center;
     padding-left: 50px;
     padding-right: 50px;
     width: 100%;
 }
-.zz{
+
+.zz {
     display: flex;
     align-items: center;
     justify-content: space-between;
-     }
-
-
-.tete a {
-    
-    margin: 12px;
-
 }
 
+.tete a {
+    margin: 12px;
+}
 
-main h2:first-child{
+main h2:first-child {
     margin-top: 100px;
 }
 
-
-
-.carte{
+.carte {
     margin-top: -50px;
+}
+@media screen and (max-width: 1024px) {
+    body {
+        font-size: 18px;
+    }
+
+    .Peniel,
+    .zola {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .logo {
+        font-size: 30px;
+    }
+
+    .piedpage {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+        padding: 15px;
+    }
+
+    input {
+        width: 400px;
+        max-width: 100%;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    body {
+        font-size: 16px;
+    }
+
+    .Peniel,
+    .zola {
+        height: auto;
+        min-height: 80px;
+        padding: 15px;
+        flex-wrap: wrap;
+    }
+
+    .logo {
+        font-size: 26px;
+    }
+
+    .nav1 {
+        width: 100%;
+        margin-top: 10px;
+        text-align: center;
+    }
+
+    .nav1 a {
+        margin: 10px;
+        font-size: 14px;
+    }
+
+    .piedpage {
+        grid-template-columns: 1fr;
+        gap: 30px;
+        padding: 15px;
+    }
+
+    .Connexion {
+        flex-direction: column;
+        margin: 10px;
+    }
+
+    .Connexion1 {
+        width: 100%;
+    }
+
+    input {
+        width: 100%;
+    }
+
+    .users {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .pen {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .zz {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    main h2:first-child {
+        margin-top: 50px;
+    }
+}
+
+
+@media screen and (max-width: 480px) {
+    body {
+        font-size: 14px;
+    }
+
+    .Peniel,
+    .zola {
+        padding: 10px;
+        min-height: 70px;
+    }
+
+    .logo {
+        font-size: 22px;
+        height: auto;
+    }
+
+    .nav1 a {
+        margin: 5px;
+        font-size: 12px;
+        display: block;
+    }
+
+    .se_connecter {
+        width: 80px;
+        height: 28px;
+        font-size: 12px;
+    }
+
+    label {
+        font-size: 16px;
+        margin: 8px;
+    }
+
+    input {
+        height: 35px;
+        font-size: 14px;
+    }
+
+    footer {
+        padding: 15px;
+    }
+
+    .Alexandre,
+    .Mickael,
+    .Corentin {
+        padding: 8px;
+        margin: 3px;
+    }
+
+    .carte {
+        margin-top: -20px;
+    }
+}
+
+
+@media screen and (max-width: 360px) {
+    .logo {
+        font-size: 18px;
+    }
+
+    .nav1 a {
+        font-size: 11px;
+        margin: 3px;
+    }
+
+    .se_connecter {
+        width: 70px;
+        height: 26px;
+        font-size: 11px;
+    }
 }
